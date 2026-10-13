@@ -38,4 +38,4 @@ Buka http://localhost:3000. Untuk build produksi: `npm run build` lalu `npm star
 
 ---
 
-Bagian dari koleksi 12 template link-in-bio di [PortalBio](https://www.pintuweb.com/link-in-bio). Dibuat oleh [PintuWeb](https://www.pintuweb.com), jasa pembuatan website.
+Bagian dari koleksi 12 template link-in-bio di [PortalBio](https://www.pintuweb.id/link-in-bio). Dibuat oleh [PintuWeb](https://www.pintuweb.id), jasa pembuatan website.
