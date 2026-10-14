@@ -4,10 +4,10 @@ import "./globals.css";
 const dmserif = DM_Serif_Display({ subsets: ["latin"], variable: "--font-dmserif", weight: "400" });
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta" });
 
-const __jsonld = {"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Kopi Vendra","description":"Kedai kopi rumahan","url":"https://linkinbio-vendra.vercel.app","areaServed":"ID"};
+const __jsonld = {"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Kopi Vendra","description":"Kedai kopi rumahan","url":"https://linkinbio-vendra.pintuweb.id","areaServed":"ID"};
 
 export const metadata = {
-  metadataBase: new URL("https://linkinbio-vendra.vercel.app"),
+  metadataBase: new URL("https://linkinbio-vendra.pintuweb.id"),
   title: { default: "Kopi Vendra — Kedai Kopi Rumahan di Bandung", template: "%s — Kopi Vendra" },
   description: "Tautan Kopi Vendra, kedai kopi rumahan di Bandung: status buka menurut jam WIB, menu lengkap, pre-order ambil di kedai dengan jam pilihan, dan kopi untuk acara.",
   applicationName: "Kopi Vendra",
@@ -15,11 +15,11 @@ export const metadata = {
   authors: [{ name: "Kopi Vendra" }],
   creator: "Kopi Vendra",
   publisher: "Kopi Vendra",
-  alternates: { canonical: "https://linkinbio-vendra.vercel.app" },
+  alternates: { canonical: "https://linkinbio-vendra.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://linkinbio-vendra.vercel.app",
+    url: "https://linkinbio-vendra.pintuweb.id",
     siteName: "Kopi Vendra",
     title: "Kopi Vendra — Kedai Kopi Rumahan di Bandung",
     description: "Tautan Kopi Vendra, kedai kopi rumahan di Bandung: status buka menurut jam WIB, menu lengkap, pre-order ambil di kedai dengan jam pilihan, dan kopi untuk acara.",

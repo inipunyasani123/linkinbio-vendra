@@ -1,4 +1,4 @@
-const SITE = "https://linkinbio-vendra.vercel.app";
+const SITE = "https://linkinbio-vendra.pintuweb.id";
 
 export default function sitemap() {
   const now = new Date();

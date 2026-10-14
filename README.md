@@ -2,7 +2,7 @@
 
 Tautan Kopi Vendra, kedai kopi rumahan di Bandung: status buka menurut jam WIB, menu lengkap, pre-order ambil di kedai dengan jam pilihan, dan kopi untuk acara.
 
-**Demo live:** https://linkinbio-vendra.vercel.app
+**Demo live:** https://linkinbio-vendra.pintuweb.id
 
 ![Tangkapan layar Kopi Vendra](public/og.jpg)
 

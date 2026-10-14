@@ -1,7 +1,7 @@
 export default function robots() {
   return {
     rules: { userAgent: "*", allow: "/" },
-    sitemap: "https://linkinbio-vendra.vercel.app/sitemap.xml",
-    host: "https://linkinbio-vendra.vercel.app",
+    sitemap: "https://linkinbio-vendra.pintuweb.id/sitemap.xml",
+    host: "https://linkinbio-vendra.pintuweb.id",
   };
 }
