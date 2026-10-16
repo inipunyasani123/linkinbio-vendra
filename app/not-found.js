@@ -9,7 +9,7 @@ export default function NotFound() {
         <p className="text-5xl" aria-hidden="true">☕💨</p>
         <h1 className="mt-4 font-display text-3xl">Gelasnya kosong</h1>
         <p className="mt-2 text-espresso/75">Halaman ini tidak ada di menu kami.</p>
-        <Link href="/" className="mt-6 inline-flex rounded-full bg-espresso px-5 py-2.5 font-bold text-latte hover:bg-caramel-ink">Kembali ke kedai</Link>
+        <Link href="/" className="mt-6 inline-flex min-h-11 items-center rounded-full bg-espresso px-5 py-2.5 font-bold text-latte hover:bg-caramel-ink">Kembali ke kedai</Link>
       </div>
     </main>
   );

@@ -1,16 +1,20 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { hariIniWIB, tambahHari } from '@/lib/waktu';
 
 export default function FormKatering() {
   const [selesai, setSelesai] = useState(false);
-  const input = 'w-full rounded-xl border border-espresso/15 bg-foam px-4 py-3 focus:border-caramel-ink focus:outline-none';
+  // Acara paling cepat tiga hari lagi (WIB); dihitung di peramban supaya tidak basi.
+  const [min, setMin] = useState('');
+  useEffect(() => setMin(tambahHari(hariIniWIB(), 3)), []);
+  const input = 'w-full rounded-xl border border-espresso/55 bg-foam px-4 py-3 focus:border-caramel-ink';
   if (selesai) {
     return (
       <div role="status" className="card mt-5 rounded-2xl p-5">
         <p className="font-bold">Permintaan tercatat — kami balas dalam satu hari kerja.</p>
         <p className="mt-1 text-sm text-espresso/75">Ini purwarupa desain: tidak ada pesan yang benar-benar dikirim.</p>
-        <button type="button" onClick={() => setSelesai(false)} className="mt-4 rounded-full bg-latte px-4 py-2 text-sm font-bold">Isi ulang</button>
+        <button type="button" onClick={() => setSelesai(false)} className="mt-4 min-h-11 rounded-full bg-latte px-5 py-2 text-sm font-bold">Isi ulang</button>
       </div>
     );
   }
@@ -22,7 +26,8 @@ export default function FormKatering() {
       </div>
       <div>
         <label htmlFor="c-tanggal" className="mb-1 block text-sm font-bold">Tanggal acara</label>
-        <input id="c-tanggal" type="date" required min="2026-10-05" className={input} />
+        <input id="c-tanggal" type="date" required min={min || undefined} aria-describedby="c-tanggal-k" className={input} />
+        <span id="c-tanggal-k" className="mt-1 block text-xs text-espresso/70">Paling cepat tiga hari lagi</span>
       </div>
       <div>
         <label htmlFor="c-gelas" className="mb-1 block text-sm font-bold">Perkiraan gelas</label>
